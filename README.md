@@ -10,6 +10,10 @@ Projected developed using the next tecnologies;
 * Maven
 * H2 Database
 
+
+![auth](https://github.com/juantorresb/taskmanager/assets/5738179/be0591c9-a36f-495c-8632-47b9676876f9)
+
+
 Allow to the user register and login, once is authorized the endpoint generates the token authentication to allow to interact with the others endpoints.
 * /api/v1/auth
 * /api/v1/tasks
