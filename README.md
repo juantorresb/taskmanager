@@ -15,6 +15,7 @@ Projected developed using the next tecnologies;
 
 Allow to the user to login, once is authorized the endpoint generates the token authentication to allow to interact with the others endpoints.
 * /api/v1/auth/authenticate
+* /api/v1/auth/logout
 * /api/v1/tasks
 * /api/v1/users
 
@@ -34,11 +35,10 @@ Endpoints completed (you can reference to Authentication.postman_colletion.json 
 * Update a Task
 * List all the Tasks
 * List all the users (Forbidden issue)
+* Logout
 
 (TODO) Pending requirements
 * Cannot delete or update a task with a different "Assigned" status
 * The user cannot update If the task is already overdue
 * Add comments to Task
 
-
-* 
