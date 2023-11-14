@@ -26,7 +26,7 @@ Allow to the user to login, once is authorized the endpoint generates the token 
 2. Change the password, use the PATCH endpoint to update it 
 * /api/v1/users
 
-Endpoints completed (you can reference to Authentication.postman_colletion.json to validate the Endpoints and requests
+Endpoints completed (you can reference to Authentication.postman_colletion.json to validate the Endpoints and requests, *REMEMBER update the Authorization Bearer Token* 
 * The user can update te password.
 * The user cannot create other users with "Admin" role
 * Create task with Title. Description, Due Date.
