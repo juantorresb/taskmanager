@@ -10,8 +10,11 @@ import com.ionix.assessment.taskmanager.dto.RegisterRequest;
 import com.ionix.assessment.taskmanager.model.Role;
 import com.ionix.assessment.taskmanager.service.impl.AuthenticationService;
 
+import lombok.extern.slf4j.Slf4j;
+
 @SpringBootApplication
 @EnableJpaAuditing(auditorAwareRef = "auditorAware")
+@Slf4j 
 public class TaskmanagerApplication {
 
 	public static void main(String[] args) {
@@ -28,17 +31,25 @@ public class TaskmanagerApplication {
 					.password("password")
 					.role(Role.ADMIN)
 					.build();
-			System.out.println("Admin token: " + service.register(admin).getAccessToken());
+			log.info("Admin token: " + service.register(admin).getAccessToken());
 
-			var manager = RegisterRequest.builder()
-					.firstname("Admin")
-					.lastname("Admin")
-					.email("manager@mail.com")
+			var executor = RegisterRequest.builder()
+					.firstname("Executor")
+					.lastname("Executor")
+					.email("executor@mail.com")
+					.password("password")
+					.role(Role.EXECUTOR)
+					.build();
+			log.info("Executor token: " + service.register(executor).getAccessToken());
+			
+			var auditor = RegisterRequest.builder()
+					.firstname("Auditor")
+					.lastname("Auditor")
+					.email("auditor@mail.com")
 					.password("password")
 					.role(Role.AUDITOR)
 					.build();
-			System.out.println("Manager token: " + service.register(manager).getAccessToken());
-
+			log.info("Executor token: " + service.register(auditor).getAccessToken());
 		};
 	}
 }
