@@ -31,14 +31,15 @@ Endpoints completed (you can reference to Authentication.postman_colletion.json 
 * The user can update te password.
 * The user cannot create other users with "Admin" role
 * Create task with Title. Description, Due Date.
-* List the tasks assigned by user.
+* List the tasks assigned by user. (Forbidden issue)
 * Update a Task
 * List all the Tasks
-* List all the users (Forbidden issue)
+* List all the users 
 * Logout
 
 (TODO) Pending requirements
 * Cannot delete or update a task with a different "Assigned" status
 * The user cannot update If the task is already overdue
 * Add comments to Task
+* Create a Task and assign it to a User with EXECUTOR Role
 
